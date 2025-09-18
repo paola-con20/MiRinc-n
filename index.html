@@ -14,7 +14,50 @@
       color: #333;
     }
 
+    /* Barra de navegación */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #6b21a8;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 10px;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    /* Colores diferentes que combinan */
+    nav a.sobre-mi {
+      background-color: #a78bfa; /* lila claro */
+    }
+    nav a.habilidades {
+      background-color: #c084fc; /* morado pastel */
+    }
+    nav a.proyectos {
+      background-color: #f472b6; /* rosa fuerte */
+    }
+    nav a.contacto {
+      background-color: #ec4899; /* rosa intenso */
+    }
+
+    /* Hover */
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Ajuste porque la barra es fija */
     header {
+      margin-top: 90px;
       text-align: center;
       padding: 2rem;
       background-color: rgba(255, 255, 255, 0.8);
@@ -60,7 +103,7 @@
     }
 
     a {
-      color: #6b21a8; /* morado oscuro */
+      color: #6b21a8;
       text-decoration: none;
     }
 
@@ -71,49 +114,82 @@
 </head>
 <body>
 
+  <!-- Barra de navegación -->
+  <nav>
+    <a href="#sobre-mi" class="sobre-mi">Sobre mí</a>
+    <a href="#habilidades" class="habilidades">Habilidades</a>
+    <a href="#proyectos" class="proyectos">Proyectos</a>
+    <a href="#contacto" class="contacto">Contacto</a>
+  </nav>
+
   <!-- Header / Bienvenida -->
   <header>
     <h1>Ana Paola Walle</h1>
     <p>¡Bienvenidos a mi rincón digital lleno de creatividad y aventuras!</p>
-    <img src="https://via.placeholder.com/150" alt="Foto de Ana Paola" style="border-radius:50%; margin-top:1rem;">
+    <img src="imagenes/walle.jpeg" alt="Foto de Ana Paola" width="200" height="200" style="border-radius:30%; margin-top:1rem;">
   </header>
 
   <main>
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <article>
+        <h3>YO</h3>
+        <p>Hola mi nombres es Ana Paola Walle Contreras, tengo 19 años</p>
+        <img src="imagenes/yop.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
+      </article>
+      <article>
+        <h3>Tengo dos perros ya algo viejitos</h3>
+        <h3>Mascota 1</h3>
+        <p>Una se llama Canela ella tiene 12 años, es café, tiene las patitas blancas.</p>
+        <img src="imagenes/canela.jpeg"  width="200" height="250" style="border-radius:80%; margin-top:1rem;">
+        <h3>Mascota 2</h3>
+        <p>Este perro se llama Blacky, tiene 11 años, es un perro negro, chihuahua y muy chillón.</p>
+        <img src="imagenes/blacky.jpeg"  width="300" height="100" style="border-radius:80%; margin-top:1rem;">
+      </article>
+    </section>
 
     <!-- Sección de Habilidades / Poderes -->
-    <section>
+    <section id="habilidades">
       <h2>Mis Habilidades</h2>
       <article>
-        <h3>HTML5 & CSS</h3>
-        <p>Construyo sitios web semánticos, responsivos y visualmente atractivos.</p>
+        <h3>Voluntaria PC</h3>
+        <p>Aquí aprendes sobre primeros auxilios, cosas de bomberos entre otras cosas.</p>
+        <img src="imagenes/hobi.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
       </article>
       <article>
-        <h3>Programación & Lógica</h3>
-        <p>Capacidad de resolver problemas y crear proyectos funcionales y creativos.</p>
+        <h3>Cocinar</h3>
+        <p>Aprendí a cocinar gracias a videos, a mi abuelita y mamá. Algo que me fascina cocinar son tortitas de huevo en salsa roja, aunque no tengo foto de eso pero sí de tortitas de espinacas.</p>
+        <img src="imagenes/Tortitas.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
       </article>
       <article>
-        <h3>Diseño Gráfico</h3>
-        <p>Uso colores, tipografías y formas para comunicar ideas de manera visual.</p>
+        <h3>Diseñar invitaciones o tarjetas</h3>
+        <p>Uso colores, diseños específicos y especiales basados en la temática de la fiesta o lo que me piden (normalmente mi mamá jeje).</p>
+        <img src="imagenes/invitacion.png"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
       </article>
     </section>
 
     <!-- Sección de Proyectos / Misiones -->
-    <section>
+    <section id="proyectos">
       <h2>Mis Proyectos</h2>
       <article>
-        <h3>Proyecto Web Personal</h3>
-        <p>Diseñé y desarrollé esta página para mostrar mis habilidades y proyectos.</p>
-        <a href="#">Ver Proyecto</a>
+        <h3>Proyecto la planta de robótica</h3>
+        <p>Estamos diseñando una planta que se llamará Roboplant, este proyecto está dirigido por mi compañero Caleb y un maestro.</p>
+        <img src="imagenes/plant.png"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
+        <img src="imagenes/foto caleb.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
       </article>
       <article>
-        <h3>Aplicación Hoyo Patrol</h3>
-        <p>Aplicación para reportar baches con geolocalización y seguimiento en Colima.</p>
-        <a href="#">Ver Proyecto</a>
+        <h3>Aplicación PsiFind</h3>
+        <p>Aplicación para personas con problemas mentales que quisieran ayuda psicológica y psiquiátrica.</p>
+        <img src="imagenes/ceballos.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
+        <img src="imagenes/dai.jpeg"  width="200" height="200" style="border-radius:50%; margin-top:1rem;">
+        <img src="imagenes/moy.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
+        <img src="imagenes/yo.jpeg"  width="200" height="200" style="border-radius:30%; margin-top:1rem;">
       </article>
     </section>
 
     <!-- Sección de Contacto / Conexión -->
-    <section>
+    <section id="contacto">
       <h2>Contacto</h2>
       <p>Puedes encontrarme en las siguientes redes o enviarme un correo:</p>
       <ul>
@@ -122,7 +198,6 @@
         <li>LinkedIn: <a href="https://www.linkedin.com/">linkedin.com/in/tuusuario</a></li>
       </ul>
     </section>
-
   </main>
 
   <!-- Footer -->
@@ -135,7 +210,9 @@
 
 
 
+
       
+
 
 
 
